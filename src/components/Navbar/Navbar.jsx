@@ -7,7 +7,7 @@ const Navbar = () => {
         <img src={logo} alt="" className='logo' />
         <ul>
             <li>Home</li>
-            <li>Program</li>
+            <li>Eventos</li>
             <li>About us</li>
             <li>Campus</li>
             <li>Testimonials</li>
