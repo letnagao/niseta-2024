@@ -1,20 +1,31 @@
-import './Navbar.css'
-import logo from '../../assets/logo.png'
+import { useEffect, useState } from "react";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
-  return (
-    <nav className='container'>
-        <img src={logo} alt="" className='logo' />
-        <ul>
-            <li>Home</li>
-            <li>Eventos</li>
-            <li>About us</li>
-            <li>Campus</li>
-            <li>Testimonials</li>
-            <li><button className='btn'>Contact us</button></li>
-        </ul>
-    </nav>
-  )
-}
+  const [sticky, setSticky] = useState(false);
 
-export default Navbar
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 50 ? setSticky(true) : setSticky(false)
+    });
+  }, []);
+
+  return (
+    <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
+      <img src={logo} alt="" className="logo" />
+      <ul>
+        <li>Home</li>
+        <li>Eventos</li>
+        <li>Sobre nós</li>
+        <li>Campus</li>
+        <li>Testimonials</li>
+        <li>
+          <button className="btn">Contact us</button>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
