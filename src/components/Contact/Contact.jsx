@@ -3,8 +3,35 @@ import msg_icon from "../../assets/msg-icon.png";
 import mail_icon from "../../assets/mail-icon.png";
 import phone_icon from "../../assets/phone-icon.png";
 import location_icon from "../../assets/location-icon.png";
+import white_arrow from "../../assets/white-arrow.png";
+import React from "react";
 
 const Contact = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Enviando....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "3db80728-2c5a-4823-a39b-289636bf65d1");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Email enviado com sucesso!");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="contact">
       <div className="contact-col">
@@ -32,7 +59,7 @@ const Contact = () => {
         </ul>
       </div>
       <div className="contact-col">
-        <form>
+        <form onSubmit={onSubmit}>
           <label>Seu nome</label>
           <input
             type="text"
@@ -53,8 +80,11 @@ const Contact = () => {
             placeholder="Digite sua mensagem"
             required
           ></textarea>
-          <button type="submit" className="btn dark-btn">Enviar</button>
+          <button type="submit" className="btn dark-btn">
+            Enviar <img src={white_arrow} alt="" />
+          </button>
         </form>
+        <span>{result}</span>
       </div>
     </div>
   );
