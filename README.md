@@ -1,5 +1,14 @@
 # Niseta Tour - International Cultural Integration Event Website
 
+
+![Language count](https://img.shields.io/github/languages/count/letnagao/niseta-2024?color=green)
+![Top language](https://img.shields.io/github/languages/top/letnagao/niseta-2024?color=ff69b4)
+![Repo size](https://img.shields.io/github/repo-size/letnagao/niseta-2024?color=yellow)
+![Commit Activity](https://img.shields.io/github/commit-activity/y/letnagao/niseta-2024?color=blue)
+![Latest commit](https://img.shields.io/github/last-commit/letnagao/niseta-2024?color=red)
+[![GitHub watchers](https://img.shields.io/github/watchers/letnagao/niseta-2024?logo=GitHub)](https://github.com/letnagao/niseta-2024/watchers)
+![Maintained](https://img.shields.io/maintenance/yes/9999)
+
 **Niseta Tour** is an international event focused on youth integration, with the mission of promoting and celebrating the rich **uchinanchu** culture. The event is held rotationally across various countries, including **Peru, Argentina, Bolivia, and Brazil**, offering a unique platform for cultural exchange among young people from around the world.
 
 Since its inception, **Niseta Tour** has successfully hosted **12 editions**, bringing together over **1000 participants** from multiple countries, such as the **USA/Hawaii, Japan, France, and Mexico**. Each edition provides an invaluable opportunity for sharing traditions, stories, and cultural experiences, strengthening global connections and mutual understanding.
