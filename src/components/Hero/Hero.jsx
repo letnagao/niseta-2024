@@ -10,9 +10,7 @@ const Hero = () => {
         </h1>
         <p>
           Promovemos a cultura de Okinawa por meio da troca de experiências e
-          conhecimentos, conectando pessoas e tradições. Realizado anualmente em
-          diferentes países, é uma celebração global das raízes okinawanas e da
-          diversidade cultural.
+          conhecimentos, conectando pessoas e tradições. 
         </p>
         <button className="btn">
           Veja mais <img src={dark_arrow} alt="" />
