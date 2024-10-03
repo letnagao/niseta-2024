@@ -6,6 +6,7 @@ import user_1 from "../../assets/user-1.png";
 import user_2 from "../../assets/user-2.png";
 import user_3 from "../../assets/user-3.png";
 import user_4 from "../../assets/user-4.png";
+import user_5 from "../../assets/user-5.png";
 
 const Testimonials = () => {
   const slider = useRef();
@@ -77,7 +78,7 @@ const Testimonials = () => {
               <div className="user-info">
                 <img src={user_3} alt="" />
                 <div>
-                  <h3>Sebi S</h3>
+                  <h3>Sebi Shimabuku</h3>
                   <span>Niseta Tour 2018, ARGENTINA</span>
                 </div>
               </div>
@@ -104,6 +105,27 @@ const Testimonials = () => {
                 enriqueceu minha visão de mundo. Essa experiência foi importante
                 não só pela minha identidade como uchinanchu, mas também por ter
                 aprendido sobre a cultura peruana.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className="slide">
+              <div className="user-info">
+                <img src={user_5} alt="" />
+                <div>
+                  <h3>Gabriel Hana</h3>
+                  <span>Niseta Tour 2017, PERU</span>
+                </div>
+              </div>
+              <p>
+                No soy uchinanchu de sangre, pero sí de corazón, lo entendí
+                gracias a Niseta. Al principio, me sentía ajeno a la cultura
+                okinawense, pero con el tiempo, hice amigos , quienes se
+                convirtieron en mi segunda familia. Aunque perdimos contacto
+                durante un tiempo, nos reencontramos y compartimos risas, lo que
+                me hizo comprender Ichariba Choode. Mis orígenes no limitan los
+                sentimientos que comparto con ellos, y aunque no nos veamos, mi
+                conexión permanecerá.
               </p>
             </div>
           </li>

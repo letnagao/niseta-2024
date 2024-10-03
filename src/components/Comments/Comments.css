@@ -1,0 +1,88 @@
+.comment-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+  }
+  
+  .comment-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .comment-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment-section input,
+  .comment-section textarea,
+  .comment-section select {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .comment-section textarea {
+    min-height: 120px;
+  }
+  
+  .comment-section button {
+    padding: 12px 15px;
+    background-color: #7b47d1;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-section button img {
+    margin-left: 10px;
+  }
+  
+  .comment-section button:hover {
+    background-color: #653aa5;
+  }
+  
+  .comment-list {
+    margin-top: 30px;
+  }
+  
+  .comment-list h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .comment-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .comment-list li {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .comment-list li p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .comment-list li strong {
+    color: #333;
+  }
+  

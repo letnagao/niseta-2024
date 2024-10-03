@@ -9,6 +9,7 @@ import Programs from "./components/Programs/Programs";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Title from "./components/Title/Title";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
+// import Comments from "./components/Comments/Comments";
 
 const App = () => {
 
@@ -31,6 +32,7 @@ const App = () => {
         <Testimonials />
         <Title subTitle="Fale Conosco" title="Entre em Contato" />
         <Contact />
+        {/* <Comments /> */}
         <Footer />
       </div>
       <VideoPlayer playState={playState} setPlayState={setPlayState} />
